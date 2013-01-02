@@ -1,0 +1,18 @@
+'use strict';
+
+constellationApp.controller('ContactsCtrl', function($scope, Contact, ContactLabel) {
+
+  $scope.labels = ContactLabel.query();
+	var localQuery = $scope.query;
+	$scope.query = '';
+  $scope.contacts = Contact.query();
+
+	$scope.selectLabel = function( label ) {
+		label.selected = !label.selected;
+  }
+
+	$scope.labelsFilter = function (contact) {
+		return contact.name.toLowerCase().indexOf($scope.query) > -1;
+	}
+
+});

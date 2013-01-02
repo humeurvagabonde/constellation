@@ -1,0 +1,26 @@
+<input ng-model="query">
+<div class="row">
+  <div class="span3">
+		<div class="well">
+		  <ul class="nav nav-pills nav-stacked">
+				<li class="nav-header">Labels</li>
+				<li ng-repeat="label in labels" ng-class="{active: label.selected}">
+					<a href="" ng-click="selectLabel(label)">{{label.name}}<i class="pull-right icon-edit"></i></a>
+				</li>
+			</ul>
+		</div>
+  </div>
+  <div class="span9">
+		<header>This is the contacts view.</header>
+		<table class="table table-striped">
+  		<tr ng-repeat="contact in contacts| filter: function() { return true; }">
+				<td>{{contact.name}}</td>
+				<td>{{contact.lastContact}}</td>
+			</tr>
+		</table>
+  </div>
+
+<a ui-jq="popover" ui-options="{title: 'PopOver Fuckin Title!'}" data-content="My fuckin'' content">Click me cuz I Looove that</a>
+
+</div>
+

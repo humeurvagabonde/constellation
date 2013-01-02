@@ -1,0 +1,18 @@
+[
+ {
+  "id": "partenaire",
+  "name": "Partenariat"
+  },
+ {
+  "id": "pub",
+  "name": "Pub"
+  },
+ {
+  "id": "band",
+  "name": "Band"
+  },
+ {
+  "id": "copains",
+  "name": "Copains"
+  }
+]
