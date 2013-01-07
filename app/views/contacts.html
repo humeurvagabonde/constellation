@@ -13,9 +13,10 @@
   <div class="span9">
 		<header>This is the contacts view.</header>
 		<table class="table table-striped">
-  		<tr ng-repeat="contact in contacts| filter: labelsFilter">
+  		<tr ng-repeat="contact in contacts | filter: query">
 				<td>{{contact.name}}</td>
 				<td>{{contact.lastContact}}</td>
+				<td>{{contact.comment}}</td>
 			</tr>
 		</table>
   </div>
@@ -23,6 +24,8 @@
 <a ui-jq="popover" ui-options="{title: 'PopOver Fuckin Title!'}" data-content="My fuckin'' content">Click me cuz I Looove that</a>
 
 Test Labels selected : {{selectedLabels}}
+
+Coucou Julien !! Rodolphe
 
 </div>
 

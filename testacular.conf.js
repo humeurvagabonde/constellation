@@ -10,11 +10,15 @@ files = [
   JASMINE,
   JASMINE_ADAPTER,
   'app/scripts/vendor/angular.js',
+  'app/scripts/vendor/angular-*.js',
   'test/vendor/angular-mocks.js',
   'app/scripts/*.js',
   'app/scripts/**/*.js',
   'test/mock/**/*.js',
-  'test/spec/**/*.js'
+  'test/spec/**/*.js',
+  'components/jquery/jquery.js',
+  'components/bootstrap/docs/assets/js/bootstrap.js',
+  'components/angular-ui/build/angular-ui.js'
 ];
 
 
@@ -57,7 +61,7 @@ autoWatch = false;
 // - Opera
 // - Safari
 // - PhantomJS
-browsers = ['PhantomJS'];
+browsers = ['PhantomJS', 'Chrome'];
 
 
 // Continuous Integration mode

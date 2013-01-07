@@ -11,8 +11,8 @@ describe('Service: constellationServices', function () {
     constellationServices = _constellationServices_;
   }));
 
-  it('should do something', function () {
-    expect(!!constellationServices).toBe(true);
-  });
+  //it('should do something', function () {
+  //  expect(!!constellationServices).toBe(true);
+  //});
 
 });
